@@ -1,3 +1,30 @@
+/*=== Components / Pages / Keyframes*/
+@import url("/src/css/cssPage/pageWeb.css");
+/* === Root ===*/
+:root {
+    /*=Colors=*/
+    --clr-white: #fff; 
+    --clr-black: #000;
+    --clr-ux-1: #5CB9F2; 
+    --clr-ux-2: #6DCCF2; 
+    --clr-ux-3: #03A62C; 
+    --clr-ux-4: #8FD994; 
+    --clr-ux-white: #F2F2F2; 
+    --clr-ux-black: #333; 
+  /*=Fonts=*/
+    --font-size-title: 2.4rem: 
+    --font-size-titTwo: 1.8rem; 
+    --font-size-medium: 1.6rem; 
+    --font-size-small: 1.2rem; 
+  /*=Typography=*/
+
+  /*=margin=*/
+  --margin-top: 2rem; 
+  --margin-left: 1rem; 
+  --margin-right: 1rem; 
+  margin--bottom: 2rem; 
+}
+/* === General CSS ===*/
 *,
 *::before,
 *::after {
