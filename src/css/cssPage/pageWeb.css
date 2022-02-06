@@ -1,0 +1,8 @@
+/* = Components =*/
+@import url("/src/css/cssPage/loadCSS.css");
+
+/* === General Design ===*/
+.page {
+  width: 100%;
+  display: grid;
+}
