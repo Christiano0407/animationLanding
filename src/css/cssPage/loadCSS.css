@@ -4,9 +4,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #f2f2f2;
   z-index: 3;
   position: absolute;
+
+  animation: loader 2s linear forwards;
 }
 
 /* == Animation Loader ==*/
+@keyframes loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader .ball {
+  background: #6dccf2;
+  width: 50px;
+  height: 50px;
+  margin: 1rem;
+  border-radius: 50%;
+}
