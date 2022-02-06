@@ -1,8 +1,11 @@
 /* = Components =*/
+@import url("/src/css/cssPage/container.css");
 @import url("/src/css/cssPage/loadCSS.css");
+@import url("/src/css/cssPage/modal.css");
 
 /* === General Design ===*/
 .page {
   width: 100%;
   display: grid;
+  position: relative;
 }
