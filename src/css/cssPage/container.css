@@ -45,13 +45,16 @@ header {
   width: 70%;
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
+  cursor: pointer;
 }
 .navBar__content--list a {
   font-size: var(--font-size-medium);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--clr-red);
+  opacity: 0.5;
 }
 .navBar__content--list a:hover {
   color: #000;
-  opacity: 0.5;
+  opacity: 1;
 }

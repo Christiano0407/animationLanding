@@ -8,7 +8,7 @@
   z-index: 3;
   position: absolute;
 
-  animation: loader 2s linear forwards;
+  animation: loader 0s linear forwards;
 }
 
 /* == Animation Loader ==*/
