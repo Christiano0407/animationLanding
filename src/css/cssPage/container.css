@@ -52,6 +52,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 1rem;
+  border-radius: 1rem;
 }
 .navBar__content--list {
   width: 70%;
@@ -208,3 +209,11 @@ header {
 }
 
 /* ==== Slider ==== */
+.slider {
+  grid-area: footer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: var(--clr-yellow);
+  border-top-right-radius: 10rem;
+}
