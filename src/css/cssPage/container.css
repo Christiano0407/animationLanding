@@ -142,5 +142,69 @@ header {
 .aside__content {
   grid-area: aside;
   width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "asideOne  asideTwo"
+    "asideOne  asideTwo";
+  position: relative;
+  z-index: 1;
 }
+.aside__content .aside__content--text {
+  grid-area: asideOne;
+  z-index: 10;
+  position: absolute;
+  transform: rotate(90deg);
+  font-size: 3rem;
+  font-weight: 500;
+  top: 35rem;
+  left: -3rem;
+  animation: hero 3s 1s ease-in-out;
+}
+
+@keyframes hero {
+  from,
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.aside__content--img {
+  position: absolute;
+  z-index: 20;
+  width: 300px;
+  height: 450px;
+  top: 150px;
+  left: 100px;
+  animation: superman 2s 0.5s ease-in;
+}
+.aside__content--img img {
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aside__content--div {
+  grid-area: asideTwo;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-yellow);
+}
+
+@keyframes superman {
+  from,
+  50% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /* ==== Slider ==== */
