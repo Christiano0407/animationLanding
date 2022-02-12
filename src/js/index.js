@@ -1,14 +1,21 @@
 console.group("Animation Landing Page");
 // DOM Animation ===>
-const btnModal = document.getElementById("btn");
-console.log(btnModal);
 const modal = document.querySelector(".modal");
 console.log(modal);
-const close = document.querySelector(".modal__container--close");
+const btnModal = document.querySelector("#btn");
+console.log(btnModal);
+const closeBtn = document.querySelector(".modal__container--close");
+console.log(closeBtn);
 /* console.log(close); */
 // Events ==>
-btnModal.addEventListener("click", () => {
+btnModal.addEventListener(`click`, () => {
   modal.classList.remove("hidden");
   modal.classList.add("visible");
+});
+
+closeBtn.addEventListener(`click`, () => {
+  console.log("here!");
+  modal.classList.add("hidden");
+  modal.classList.remove("visible");
 });
 console.groupEnd();
