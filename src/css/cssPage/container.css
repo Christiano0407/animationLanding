@@ -157,12 +157,13 @@ header {
   grid-area: asideOne;
   z-index: 10;
   position: absolute;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   font-size: 3rem;
   font-weight: 500;
   top: 35rem;
   left: -3rem;
-  animation: hero 3s 1s ease-in-out;
+  opacity: 0;
+  animation: hero 3s 1s ease-in-out forwards;
 }
 
 @keyframes hero {
@@ -181,7 +182,7 @@ header {
   height: 450px;
   top: 150px;
   left: 100px;
-  animation: superman 2s 0.5s ease-in;
+  animation: superman 2s 0.5s ease-in-out;
 }
 .aside__content--img img {
   object-fit: cover;
@@ -194,20 +195,30 @@ header {
   width: 100%;
   height: 100%;
   background: var(--clr-yellow);
+  animation: yellowAside 2.5s 1s ease-in-out forwards;
 }
 
 @keyframes superman {
   from,
   50% {
-    transform: translateY(-300px);
+    transform: translateX(300px);
     opacity: 0;
   }
   to {
-    transform: translateY(0px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
-
+@keyframes yellowAside {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 /* ==== Slider ==== */
 .slider {
   grid-area: footer;
@@ -216,4 +227,14 @@ header {
   position: relative;
   background: var(--clr-yellow);
   border-top-right-radius: 10rem;
+  animation: sliderScroll 2s 1s ease-in-out forwards;
 }
+@keyframes sliderScroll {
+  from,
+  50% {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+} ;
