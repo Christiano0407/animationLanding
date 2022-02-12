@@ -245,7 +245,7 @@ header {
   width: 100px;
   height: 100px;
   cursor: pointer;
-  animation: heroesAll 2.5s 1.5s ease-in-out;
+  animation: heroesAll 2.5s 1.5s ease-in-out forwards;
 }
 @keyframes heroesAll {
   from {
