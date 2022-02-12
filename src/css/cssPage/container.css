@@ -241,11 +241,11 @@ header {
     transform: translateY(0px);
   }
 }
-.footer__slider img {
+.footer__slider div img {
   width: 100px;
   height: 100px;
   cursor: pointer;
-  animation: heroesAll 2.5s 1.5s ease-in-out forwards;
+  animation: heroesAll 2.5s 1.5s ease-in-out;
 }
 @keyframes heroesAll {
   from {
