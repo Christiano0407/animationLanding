@@ -241,11 +241,26 @@ header {
     transform: translateY(0px);
   }
 }
+.footer__slider div {
+  background: var(--clr-ux-1);
+  width: 130px;
+  height: 50%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  position: relative;
+  top: 4rem;
+}
 .footer__slider div img {
   width: 100px;
   height: 100px;
   cursor: pointer;
-  animation: heroesAll 2.5s 1.5s ease-in-out;
+  position: absolute;
+  bottom: 6rem;
+  animation: heroesAll 3s 1.5s ease-in-out;
+}
+.footer__slider div:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease-in-out;
 }
 @keyframes heroesAll {
   from {
@@ -256,7 +271,4 @@ header {
     opacity: 1;
     transform: scale(100%);
   }
-}
-.footer__slider img:hover {
-  transform: scale(1.5);
 }
