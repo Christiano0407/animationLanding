@@ -77,13 +77,13 @@
         </section>
 
         <footer class="footer__slider">
-          <div>
+          <div id="btn">
             <img src="/src/assets/img/spiderman.png" alt="spiderman-img" />
           </div>
-          <div>
+          <div id="btn">
             <img src="/src/assets/img/robin.png" alt="robin-img" />
           </div>
-          <div>
+          <div id="btn">
             <img src="/src/assets/img/batman-2.png" alt="batman-img" />
           </div>
         </footer>
@@ -94,8 +94,14 @@
         <div class="ball"></div>
         <div class="ball"></div>
       </section>
-      <!--===  Modal ==== -->
-      <section class="modal"></section>
+      <!--===  Modal =add:hidden=== -->
+      <section class="modal hidden">
+        <div class="modal__container">
+          <a class="modal__container--close" href="#"
+            ><i class="fa-solid fa-xmark"></i
+          ></a>
+        </div>
+      </section>
     </div>
     <!--Javascript -->
     <script src="/src/js/index.js"></script>
