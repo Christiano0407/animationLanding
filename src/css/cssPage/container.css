@@ -309,27 +309,102 @@ header {
 }
 .modal__container--close {
   font-size: 2rem;
+  border: 1px solid #fff;
+  padding: 2rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20rem;
+  cursor: pointer;
+}
+.modal__container--close:active {
+  transform: scale(0.9);
 }
 .modal__container--slider {
   width: 30rem;
   height: 20rem;
   transform-style: preserve-3d;
+  position: relative;
+  bottom: 20px;
+}
+.modal__container--slider input {
+  visibility: hidden;
 }
 .modal__container--slider .cards {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 30rem;
+  height: 20rem;
+}
+.cards label img {
+  height: 150px;
+  object-fit: cover;
 }
 .card {
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
   cursor: pointer;
   display: grid;
   place-items: center;
   background: var(--clr-yellow);
   width: 50%;
   height: 100%;
+  border-radius: 1rem;
+}
+/*== Carousel*/
+#radio-1:checked ~ .cards #card-1,
+#radio-2:checked ~ .cards #card-2,
+#radio-3:checked ~ .cards #card-3 {
+  transform: translateX(0%) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#radio-1:checked ~ .cards #card-2,
+#radio-2:checked ~ .cards #card-3,
+#radio-3:checked ~ .cards #card-1 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+#radio-1:checked ~ .cards #card-3,
+#radio-2:checked ~ .cards #card-1,
+#radio-3:checked ~ .cards #card-2 {
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.5;
+  z-index: 0;
+}
+/*BTN Container*/
+.btn__container {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+.btn__container span {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.btn__container:hover {
+  background: var(--clr-red);
+}
+.btn__container span:hover {
+  color: #fff;
+}
+.btn__container:active {
+  transform: scale(0.9);
 }
