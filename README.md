@@ -42,7 +42,7 @@ Course with Platzi of Animation and Layout
 
 > Animation Landing Page
 
-![](https://pandao.github.io/../../src/assets/img/animationLanding01.png)
+![](./src/assets/img/animationLanding01.png)
 
 ![](../animationLanding/src/assets/img/animationLanding01.png)
 
