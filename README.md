@@ -8,7 +8,7 @@ Course with Platzi of Animation and Layout
 
 ## Global Style
 
-> Coors
+> Colors
 
 - --clr-white: #fff;
 - --clr-black: #000;
