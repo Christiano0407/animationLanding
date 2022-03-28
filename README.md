@@ -6,7 +6,57 @@ Course with Platzi of Animation and Layout
 
 - [Animation Course Platzi](https://platzi.com/home)
 
+## Global Style
+
+> Coors
+
+- --clr-white: #fff;
+- --clr-black: #000;
+- --clr-ux-1: #5CB9F2;
+- --clr-ux-2: #6DCCF2;
+- --clr-ux-3: #03A62C;
+- --clr-ux-4: #8FD994;
+- --clr-ux-white: #F2F2F2;
+- --clr-ux-black: #333;
+- --clr-yellow: #ffd602;
+- --clr-blue: #036cb6;
+- --clr-red: #d5040a;
+
+> FONTS
+
+- [Google Fonts](https://fonts.google.com/)
+- --font-size-title: 2.4rem:
+- --font-size-titTwo: 1.8rem;
+- --font-size-medium: 1.6rem;
+- --font-size-small: 1.2rem;
+
+> Typography (Google Fonts)
+
+- --font-family: changeling-neo,sans-serif;
+
+## Tools Javascript Animation
+
+- [GSAP](https://greensock.com/gsap/)
+
+## Final Project
+
+> Animation Landing Page
+
+![](../animationLanding/src/assets/img/animationLanding01.png)
+
+![](../animationLanding/src/assets/img/animationLanding02.png)
+
+![](../animationLanding/src/assets/img/animationLanding03.png)
+
+![](../animationLanding/src/assets/img/animationLanding04.png)
+
+![](../animationLanding/src/assets/img/animationLanding05.png)
+
 # MIT License
+
+> Choose License
+
+- [Choose License](https://choosealicense.com/)
 
 MIT License
 
