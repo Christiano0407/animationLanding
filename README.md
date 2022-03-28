@@ -42,14 +42,10 @@ Course with Platzi of Animation and Layout
 
 > Animation Landing Page
 
-![](../animationLanding/src/assets/img/animationLanding01.png)
-
+![]("../animationLanding/src/assets/img/animationLanding01.png")
 ![](../animationLanding/src/assets/img/animationLanding02.png)
-
 ![](../animationLanding/src/assets/img/animationLanding03.png)
-
 ![](../animationLanding/src/assets/img/animationLanding04.png)
-
 ![](../animationLanding/src/assets/img/animationLanding05.png)
 
 # MIT License
